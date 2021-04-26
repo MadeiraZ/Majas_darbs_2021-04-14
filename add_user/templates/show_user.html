@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+</head>
+<body>
+    <ul>
+        {% for add_user in show_user %}
+        <li>
+            <p>
+            Username: <strong> {{ add_user.username }} </strong> <br>
+            E-mail: {{ add_user.email }} </p>
+        </li>
+        {% endfor %}
+
+
+    </ul>
+
+
+</body>
+</html>
